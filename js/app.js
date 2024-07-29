@@ -13,6 +13,7 @@ import {
 } from "./utils.js";
 
 const logout_btn = document.getElementById('logout_btn')
+const addProduct = document.getElementById('addProduct')
 const login_link = document.getElementById('login_link')
 const user_img = document.getElementById('user_img')
 const product_card_container = document.getElementById('product_card_container')
@@ -34,6 +35,8 @@ onAuthStateChanged(auth, (user) => {
     // window.location.href = "/login/index.html";
     login_link.style.display = 'inline-block';
     user_img.style.display = 'none';
+    logout_btn.style.display = 'none'
+    addProduct.style.display = 'none'
   }
 });
 
@@ -62,7 +65,7 @@ async function getAllProduct() {
 const {img , name , price} = product
 
       const card = `  <div class="product__item" >
-                        <div class="product__item__pic set-bg h-10 w-7">
+                        <div class="product__item__pic set-bg h-10 w-7 ">
                             <img src="${img}" alt="">
                             <ul class="product__hover">
                                 <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
