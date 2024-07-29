@@ -29,7 +29,7 @@ product_from.addEventListener('submit', (e)=>{
             addDoc(productCollection , productInfo).then(()=>{
                 console.log('Document Added');
 
-                window.location.href = '/index.html'
+                window.location.href = '/E-Commerce-app'
             })
         })
     })
