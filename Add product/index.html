@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<body>
+    <div class="form-container">
+        <h2>Add New Product</h2>
+        <form id="product-from" action="/submit" method="POST">
+            
+                        <div class="form-group">
+                            <label for="price">Product Img</label>
+                            <input type="file" id="product_img"  required>
+                        </div>
+            <div class="form-group">
+                <label for="product-name">Product Name</label>
+                <input type="text" id="product-name" name="product_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="number" id="price" name="price" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <option value="electronics">Shirts</option>
+                    <option value="clothing">Glasses</option>
+                    <option value="home">Shoes</option>
+                    <option value="home">Back Pack</option>
+                    <!-- Add more categories as needed -->
+                </select>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="app.js" type="module"></script>
+
+</body>
+</html>

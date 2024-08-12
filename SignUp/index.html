@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form id="signup_form" class="mt-10 max-w-md mx-auto">
+      <div class="relative z-0 w-full mb-5 group">
+          <img
+          class="w-24 h-24 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+          src="data:image/jpeg;base64,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"
+          alt="Bordered avatar"
+          />
+          <input type="file" required  id="profile_img"/>
+      </div>
+      <div class="relative z-0 w-full mb-5 group">
+        <input
+          type="email"
+          name="floating_email"
+          id="floating_email"
+          class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+          placeholder=" "
+          required
+          value="mohsin111@gmail.com"
+        />
+        <label
+          for="floating_email"
+          class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >Email address</label
+        >
+      </div>
+      <div class="relative z-0 w-full mb-5 group">
+        <input
+          type="password"
+          name="floating_password"
+          id="floating_password"
+          class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+          placeholder=" "
+          required
+          value="123456"
+        />
+        <label
+          for="floating_password"
+          class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >Password</label
+        >
+      </div>
+      <div class="relative z-0 w-full mb-5 group">
+        <input
+          type="password"
+          name="repeat_password"
+          id="floating_repeat_password"
+          class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+          placeholder=" "
+          required
+          value="123456"
+        />
+        <label
+          for="floating_repeat_password"
+          class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >Confirm password</label
+        >
+      </div>
+      <div class="grid md:grid-cols-2 md:gap-6">
+        <div class="relative z-0 w-full mb-5 group">
+          <input
+            type="text"
+            name="floating_first_name"
+            id="floating_first_name"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            placeholder=" "
+            required
+            value="Mohsin"
+          />
+          <label
+            for="floating_first_name"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >First name</label
+          >
+        </div>
+        <div class="relative z-0 w-full mb-5 group">
+          <input
+            type="text"
+            name="floating_last_name"
+            id="floating_last_name"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            placeholder=" "
+            required
+            value="Awan"
+          />
+          <label
+            for="floating_last_name"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >Last name</label
+          >
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 md:gap-6">
+        <div class="relative z-0 w-full mb-5 group">
+          <input
+            type="tel"
+            name="floating_phone"
+            id="floating_phone"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            placeholder=" "
+            required
+            value="03222497768"
+          />
+          <label
+            for="floating_phone"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >Phone number (123-456-7890)</label
+          >
+        </div>
+      </div>
+      <button
+        type="submit"
+        id="submit_btn"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        Submit
+      </button>
+      <div>
+        <p>Alrady have an account?.<a href="../login/index.html"> Login</a></p>
+      </div>
+    </form>
+
+    <script src="app.js" type="module"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </body>
+</html>
